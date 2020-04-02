@@ -95,7 +95,7 @@ jQuery(document).ready(function($) {
       action = 'contactform/contactform.php';
     }
     $.ajax({
-      type: "POST",
+      type: "GET", 
       url: action,
       data: str,
       success: function(msg) {

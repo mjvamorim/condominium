@@ -94,7 +94,7 @@
                     <a class="page-scroll" href="#contact">Contato</a>
                   </li>
                   <li>
-                      <a class="page-scroll" href="http://econdominio.net/">Login</a>
+                      <a class="page-scroll" href="/login">Login</a>
                   </li>
                 </ul>
               </div>
@@ -457,7 +457,8 @@
                 <div id="check1" class="panel-collapse collapse in">
                   <div class="panel-body">
                     <p>
-                      Sim. Ao fazer o cadastro você não precisará informar nenhum dado financeiro e terá um período de 45 dias de testes. Ao final deste período, será contactado por nossa equipe e deverá optar por um dos planos.
+                      Sim. Ao fazer o cadastro você não precisará informar nenhum dado financeiro e terá um período de testes. 
+                      Ao final deste período, será contactado por nossa equipe e deverá optar por um dos planos.
                     </p>
                   </div>
                 </div>
@@ -594,7 +595,7 @@
                 <p>
                   Receba mensalmente nossos informativos.
                 </p>
-                <form action="http://econdominio.net/subscribe" method="post" >
+                <form action="/subscribe" method="get" >
                   <div class="subs-feilds">
                     <div class="suscribe-input">
                       
@@ -768,42 +769,50 @@
       <div class="row">
         <div class="col-md-4 col-sm-4 col-xs-12">
           <div class="pri_table_list">
-            <h3>Básico <br/> <span>R$ 99,00 / mês</span></h3>
+            <h3>Padrão <br/> <span>* Grátis </span></h3>
             <ol>
               <li class="check">Sistema Online</li>
-              <li class="check cross">Até 10 Unidades</li>
+              <li class="check">Até 10 Unidades</li>
+              <li class="check cross">Ilimitado</li>
               <li class="check">Boleto Online</li>
               <li class="check cross">Domínio Próprio</li>
               <li class="check cross">Suporte Ilimitado</li>
+              <li class="check">* Totalmente Gratuito</li>
+
             </ol>
-            <button onclick="window.open('http://www.econdominio.net',)" >Registre-se</button>
+            <button onclick="window.open('/login',)" >Registre-se</button>
           </div>
         </div>
         <div class="col-md-4 col-sm-4 col-xs-12">
           <div class="pri_table_list active">
             <span class="saleon">Mais Vendido</span>
-            <h3>Padrão <br/> <span>R$ 299,00 / mês</span></h3>
+            <h3>Padrão <br/> <span>* Grátis </span></h3>
             <ol>
               <li class="check">Sistema Online</li>
-              <li class="check cross">Até 100 Unidades</li>
+              <li class="check ">Até 100 Unidades</li>
+              <li class="check cross">Ilimitado</li>
               <li class="check">Boleto Online</li>
               <li class="check cross">Domínio Próprio</li>
-              <li class="check">Suporte Ilimitado</li>
+              <li class="check cross">Suporte Ilimitado</li>
+              <li class="check">*Gratuito por 6 meses, após R$ 199/mês</li>
             </ol>
-            <button onclick="window.open('http://www.econdominio.net',)" >Registre-se</button>
+            <button onclick="window.open('/login',)" >Registre-se</button>
           </div>
         </div>
         <div class="col-md-4 col-sm-4 col-xs-12">
           <div class="pri_table_list">
-            <h3>Premium <br/> <span>R$699,00  / mês</span></h3>
+            <h3>Premium <br/> <span>R$ 699,00/mês</span></h3>
             <ol>
               <li class="check">Sistema Online</li>
+              <li class="check">Acima de 100 Unidades</li>
               <li class="check">Ilimitado</li>
               <li class="check">Boleto Online</li>
               <li class="check">Domínio Próprio</li>
               <li class="check">Suporte Ilimitado</li>
+              <li class="check">*Gratuito por 2 meses</li>
+
             </ol>
-            <button onclick="window.open('http://www.econdominio.net',)" >Registre-se</button>
+            <button onclick="window.open('/login',)" >Registre-se</button>
           </div>
         </div>
       </div>
@@ -819,7 +828,7 @@
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs=12">
           <div class="suscribe-text text-center">
             <h3>Bem vindo a modernidade</h3>
-            <a class="sus-btn" href="http://econdominio.net/login">Experimente</a>
+            <a class="sus-btn" href="/login">Experimente</a>
           </div>
         </div>
       </div>
@@ -891,7 +900,7 @@
             <div class="form contact-form">
               <div id="sendmessage">Sua Mensagem foi enviada. Obrigado!</div>
               <div id="errormessage"></div>
-              <form action="http://econdominio.net/contato" method="post" role="form" class="contactForm">
+              <form action="/faleConosco" method="get" role="form" class="contactForm">
                 <div class="form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Nome" data-rule="minlen:4" data-msg="Digite ao menos 4 caracteres!" />
                   <div class="validation"></div>
